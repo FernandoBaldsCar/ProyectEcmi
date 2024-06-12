@@ -1,0 +1,84 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.Titulo{
+  font-size: 18;
+}
+.crossfade-text {
+  color:black;
+  font-size: 50;
+  transition: opacity 0.5s ease-in-out;
+  
+  animation: crossfade 2s ease-in-out infinite;
+  
+  text-align: justify; /* Alinea el texto justificado */
+  margin-right: 300px; /* Agrega un margen a la izquierda */
+}
+.crossfade-text:hover {
+  opacity: 0;
+}
+
+/* Estilos para la imagen */
+.imagen-pequena {
+  width: 100px; /* Ancho deseado */
+  height: auto; /* Mantener la proporción de aspecto original */
+  position: absolute; /* Posición absoluta dentro del contenedor */
+  top: 10px; /* Desde la parte superior del contenedor */
+  right: 10px; /* Desde la parte derecha del contenedor */
+  opacity: 0; /* Inicialmente oculta la imagen */
+  transition: opacity 1s ease-in-out; /* Transición suave de opacidad durante 1 segundo */
+}
+
+/* Estilos para mostrar la imagen con opacidad al 100% al cargar */
+.imagen-pequena.loaded {
+  opacity: 1;
+}
+.footer {
+  background-color: #333333; /* Color de fondo */
+  color: #2874A6; /* Color del texto */
+}
+
+
+
+
+
+
+.iconoface-center{
+  text-align: center
+}
+
